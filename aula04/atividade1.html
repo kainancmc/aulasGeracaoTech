@@ -1,0 +1,68 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade</title>
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Formulário de candidatura</h1>
+
+        <form action="#">
+            <label for="nomeUser"> Nome: </label>
+            <input type="text" name="nomeUser" id="nomeUser">
+            <br>
+
+            <label for="email"> Email: </label>
+            <input type="text" name="email" id="email">
+            <br>
+            <br>
+
+            <label for="cargo"> Cargo de tecnologia: </label>
+            <select id="cargo" name="cargo">
+                <option value="pessoa desenvolvedora">pessoa desenvolvedora</option>
+                <option value="analista de sistemas">analista de sistemas</option>
+                <option value="administrador(a) de banco de dados">administrador(a) de banco de dados</option>
+                <option value="testador(a)">testador(a)</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="Sexo"> Selecione seu sexo: </label>
+
+            <input type="radio" id="Masculino" name="Sexo" value="Masculino" >
+            <label for="Masculino"> Masculino </label>
+            
+            <input type="radio" id="Feminino" name="Sexo" value="Feminino" >
+            <label for="Feminino"> Feminino </label>
+
+            <input type="radio" id="Outro" name="Sexo" value="Outro" >
+            <label for="Outro"> Outro </label>
+            <br>
+            <br>
+            
+            <label for="Cidade"> Cidade de interesse: </label>
+
+            <input type="checkbox" id="Fortaleza" name="Linguagem" value="Fortaleza" >
+            <label for="Fortaleza"> Fortaleza </label>
+            
+            <input type="checkbox" id="Caucaia" name="Linguagem" value="Caucaia" >
+            <label for="Caucaia"> Caucaia </label>
+
+            <input type="checkbox" id="Eusébio" name="Linguagem" value="Eusébio" >
+            <label for="Eusébio"> Eusébio </label>
+            <br>
+            <br>
+
+            <label for="MeuTexto"> Fale mais sobre você: </label><br>
+
+            <textarea type="message" id="MeuTexto" name="MeuTexto" rows="10" cols="30" maxlength="500"></textarea><br>
+            <input type="submit" value="Enviar">
+
+        </form>
+
+    </body>
+    </html>
+</html>

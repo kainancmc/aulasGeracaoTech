@@ -1,0 +1,47 @@
+header{
+    margin: 0 auto;
+    background-color: rgb(255, 81, 18); border-radius: 10px; height: 130px; width: 600px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 20px; padding-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+header nav a{
+        text-decoration: none;
+}
+
+header a{ color: white;
+    padding: 5px;
+}
+
+article{
+    margin: 0 auto;
+    background-color: gainsboro; border-radius: 10px; height: 130px; width: 600px;
+    text-align: center;
+    color: black;
+    
+}
+
+.Bolo{
+    background-color: gainsboro; border-radius: 10px; height: 70px; width: 600px;
+    margin: 0 auto;
+}
+
+.Macarronada{
+    background-color: gainsboro; border-radius: 10px; height: 70px; width: 600px;
+    margin: 0 auto;
+}
+
+.Feijoada{
+    background-color: gainsboro; border-radius: 10px; height: 70px; width: 600px;
+    margin: 0 auto;
+}
+
+footer{
+    margin-top: 130px;
+}

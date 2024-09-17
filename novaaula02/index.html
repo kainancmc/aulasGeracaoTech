@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .conteudo{
+            
+            background-color: aqua;
+        }
+        .cor1{
+            background-color:blue;
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+        .cor2{
+            background-color:red;
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+        .cor3{
+            background-color:green;
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+        .cor4{
+            background-color:yellow;
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+        span{
+            background-color: azure;
+        }
+
+        .box1{
+            background-color:blue;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .box2{
+            background-color:red;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .box3{
+            background-color:green;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .box4{
+            background-color:yellow;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .box5{
+            background-color:gray;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Display</h1>
+    <div class="conteudo">
+        <!-- Display block -->
+        <h3 style="display: inline;" class="cor1">conteudo 1</h3>
+        <h3 class="cor2">conteudo 2</h3>
+        <h3 class="cor3">conteudo 3</h3>
+        <h3 class="cor4">conteudo 4</h3>
+       
+        
+       <!-- Display inline -->
+        <a style="display: block; width: 100px; height: 100px; background-color: azure;" href="">click aqui 1</a>
+        <a href="">click aqui 2</a>
+        <a href="">click aqui 3</a>
+        <a href="">click aqui 4</a>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span>Possimus, dolorem reprehenderit consectetur explicabo.</span> quaerat voluptatibus distinctio illum velit pariatur facilis similique necessitatibus, modi suscipit debitis aspernatur ab sit tempore ea?
+        </p>
+        <!-- Display inline-block -->
+        <h3 class="box1">conteudo 1</h3>
+        <h3 class="box2">conteudo 2</h3>
+        <h3 class="box3">conteudo 3</h3>
+
+    <!-- o atributo style="display: none;" faz com que o conteúdo desapareça da tela, ou seja, deixa de ser renderizado -->
+        <h3 style="display: none;" class="box4">conteudo 4</h3>
+    <!-- mesmo exemplo do caso acima, porem sem o atributo "none" -->    
+        <h3 class="box5">conteudo 5</h3>
+    </div>
+</body>

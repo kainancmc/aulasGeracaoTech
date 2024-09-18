@@ -8,7 +8,7 @@ html{
     width: 100vw;
     height: 100vh;
     font-size: 62.5%;
-    color: black;
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -31,9 +31,10 @@ header{
     text-transform: uppercase;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: 18px;
+    padding: 10px;
 }
 
 .logo{
@@ -47,6 +48,7 @@ header{
     list-style: none;
     gap: 10px;
     align-items: center;
+    gap: 15px;
 }
 
 .menu .lista-menu a{
@@ -55,4 +57,54 @@ header{
     padding: 15px;
     transition: 2ms ease-in;
     position: relative;
+}
+
+.menu .lista-menu a::before{
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    transition: all 1s ease;
+}
+
+.menu .lista-menu a:hover:before {
+    width: 100%;
+    background-color: yellow;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgb(4, 4, 4);
+    color: white;
+    padding: 20px 0;
+    font-size: 1,6rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1350px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 20px;
 }

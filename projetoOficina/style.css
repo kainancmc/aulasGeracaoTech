@@ -1,0 +1,145 @@
+/* colocar um *{} você pode definir uma informação para todo o código. no exemplo abaixo, retiramos todas os preenchimentos e as margens padrão de todo o código. São informações que serão usadas apenas pelo navegador*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgb(16, 16, 16, 0.5), rgb(25, 25, 25, 0.5)), url(oficina1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+}
+
+header {
+    width: 100%;
+    height: 7vw;
+    background: rgb(199, 183, 1, 0.947);
+}
+
+.menu {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu .lista-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu .lista-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: 2ms ease-in;
+    position: relative;
+}
+
+.menu .lista-menu a::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: wheat;
+    transition: all 1s ease;
+}
+
+.menu .lista-menu a:hover:before{
+    width: 100%;
+    background-color: yellow;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 228, 228);
+    font-size: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.6rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1350px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+.footer-form, .footer-contact {
+    flex: 1;
+    margin: 0 100px;
+}
+
+.footer-form h3, .footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-form label {
+    margin-bottom: 5px;
+}
+
+.footer-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+.footer-form button {
+    padding: 10px;
+    font-size: 1.6rem;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+

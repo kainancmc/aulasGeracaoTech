@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aqui você irá adicionar as media queries para tornar a página responsiva complete as lacunas*/
+/* Para telas menores que 768px */
+@media (_____________) {
+    body {
+        background-color: ____________; 
+    }
+
+    main {
+        margin: 20px; /* Ajusta a margem do conteúdo principal */
+    }
+
+    header {
+        background-color:_________________; 
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        display: inline-block; /* Altera o display para inline-block para permitir alinhamento horizontal */
+    }
+
+    ul {
+        list-style-type: none; /* Remove os pontos da lista */
+        padding: 0;
+    }
+
+    li {
+        display: ___________________; /* Exibe os itens da lista na mesma linha */
+        margin-right: 20px; /* Adiciona margem à direita entre os itens */
+        font-size: _________________;
+    }
+
+    a:link {
+        color: #CCFFCC; /* Altera a cor dos links para tom de verde claro */
+        text-decoration: none;
+    }
+
+    img {
+        display: ___________;
+    }
+
+    div{
+        margin: 20px auto;
+    }
+
+    footer {
+        
+        background-color:____________;
+        color: white;
+        ________________: 20px;/*espaçamento interno*/
+        ________________: center;/*alinhamento de texto*/
+    }
+}
+
+/* Para telas com tamanho mínimo de 768px ou maiores (desktop) */
+@media (____________________________) {
+    body {
+        background-color: white;
+    }
+
+    main {
+        margin: 10px; /* Reduz a margem do conteúdo principal */
+    }
+
+    header {
+        background-color: rgb(28, 28, 127);
+        padding: 20px;
+        color: aliceblue;
+        text-align: center; /* Centraliza o conteúdo do cabeçalho */
+    }
+
+    nav {
+        display: inline-block; /* Altera o display para inline-block para permitir alinhamento horizontal */
+    }
+
+    ul {
+        list-style-type: none; /* Remove os pontos da lista */
+        padding: 0;
+    }
+
+    li {
+        display: inline; /* Exibe os itens da lista na mesma linha */
+        margin-right: 20px; /* Adiciona margem à direita entre os itens */
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    img {
+        display: inline; /* Exibe as imagens normalmente */
+        ___________: _________/* Define a largura das imagens 500 em px*/
+    }
+
+    div {
+        padding: 20px;
+        background-color: #AAD0F1;
+        margin: 10px;
+        text-align: center;
+        max-width: 80%; /* define um tamanho máximo para as divs em 80% da largura do navegador*/
+        margin: 20px auto; /* margens superior e inferiro de 20px e margens laterais automáticas*/
+    }
+
+   /* estilização apenas para os parágrafos "filhos" de divs*/
+    ___ ___{
+        text-align: left;
+    }
+
+    footer{
+        background-color: rgb(28, 28, 127);
+       /* espaçamento interno*/
+       _____________ : 20px;
+        text-align: center;
+        color:aliceblue;
+    }
+
+}

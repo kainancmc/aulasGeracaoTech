@@ -1,4 +1,3 @@
-/* colocar um *{} você pode definir uma informação para todo o código. no exemplo abaixo, retiramos todas os preenchimentos e as margens padrão de todo o código. São informações que serão usadas apenas pelo navegador*/
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@ html {
 }
 
 body {
-    background: linear-gradient(rgb(16, 16, 16, 0.5), rgb(25, 25, 25, 0.5)), url(img1.0.jpeg);
+    background: linear-gradient(rgb(16, 16, 16, 0.5), rgb(25, 25, 25, 0.5)), url("https://images.pexels.com/photos/4489704/pexels-photo-4489704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,8 +39,6 @@ header {
     font-size: 1.8rem;
     letter-spacing: 0.4rem;
     cursor: pointer;
-    width: 85px;
-    height: 85px;
 }
 
 .menu .lista-menu {
@@ -81,7 +78,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    flex-direction: column;
 }
 
 .main-content {
@@ -146,49 +142,57 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer-form, .footer-contact {
-    flex: 1;
-    margin: 0 100px;
-}
 
-.footer-form h3, .footer-contact h3 {
-    margin-bottom: 10px;
-}
 
-.container-cards {
+/* Estilo dos cards */
+.cards-container {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-
+    margin: 0 10px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
-.card1{
-    width: 200px;
-    height: 300px;
-    background-color: white;
-    border-radius: 40px;
-    margin: 7px;
-    padding: 15px;
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    
 }
 
-.card2{
-    width: 200px;
-    height: 300px;
-    background-color: white;
-    border-radius: 40px;
-    margin: 7px;
-    padding: 15px;
+
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
 }
 
-.card3{
-    width: 200px;
-    height: 300px;
-    background-color: white;
-    border-radius: 40px;
-    margin: 7px;
-    padding: 15px;
+.card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #333;
 }
 
-.container-cards button {
-    color: black;
-    background-color: yellow;
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.card button {
+    background-color: #c7b701;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    
+    border-radius: 5px;
+    
+}
+
+.card button:hover {
+    background-color: #a79700;
 }
